@@ -20,13 +20,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.className}>
       <head />
-      <body className="mx-4 mb-40 mt-8 flex max-w-2xl flex-col antialiased md:flex-row lg:mx-auto">
-        <main className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:px-0">
-          <Navbar />
-          <Providers>{children}</Providers>
-          <Analytics />
-          <SpeedInsights />
-        </main>
+      <body className="flex min-h-screen flex-col antialiased">
+        <div className="mx-4 flex max-w-2xl flex-col pb-2 pt-8  md:mx-auto md:pb-8">
+          <main className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:px-0">
+            <Navbar />
+            <Providers>{children}</Providers>
+            <Analytics />
+            <SpeedInsights />
+          </main>
+        </div>
         <Footer />
       </body>
     </html>

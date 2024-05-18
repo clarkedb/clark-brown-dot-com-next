@@ -15,14 +15,14 @@ export default function Home() {
           creating and building, and I&apos;m a big a fan of whiteboards.
         </p>
       </div>
-      <div className="w-100">
+      <div className="w-100 underline">
         <Link
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
         >
-          Download my resume <span className="inline-block">-&gt;</span>
+          Download my resume <span className="inline-block underline">-&gt;</span>
         </Link>
       </div>
     </section>

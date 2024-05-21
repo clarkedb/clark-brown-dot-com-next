@@ -11,6 +11,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
   return (
     <div>
       <p>Oh no, something went wrong... maybe refresh?</p>
+      <button onClick={reset}>reset</button>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-export default function Blog() {
+export default function Talks() {
   return (
     <section className="flex flex-col items-center justify-between">
       <div>This page is a work in progress.</div>

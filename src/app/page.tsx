@@ -11,8 +11,11 @@ export default function Home() {
         <p>
           Senior Software Engineer at Neighbor. Applied Math and Computer Science graduate.
           Experienced developer with various langages and technologies with a love of problem
-          solving. I am driven by team environments where we tackle challenging issues. I love
-          creating and building, and I&apos;m a big a fan of whiteboards.
+          solving.
+        </p>
+        <p>
+          I am driven by team environments where we tackle challenging issues. I love creating and
+          building, and I&apos;m a big a fan of whiteboards.
         </p>
       </div>
       <div className="w-100 underline">

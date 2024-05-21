@@ -1,16 +1,25 @@
-import { Metadata, MetadataRoute } from 'next'
+import { MetadataRoute } from 'next'
+
+type Asset = {
+  path: string
+  dateModified: string
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://clark-brown.com'
+
   // FIXME: dates here are always today
-  const routes = ['', '/blog'].map((route) => ({
-    url: `https://clark-brown.com${route}`,
+  const routes = ['', '/blog']
+  const routeEntries = ['', '/blog'].map((route) => ({
+    url: `${siteUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
   }))
 
-  const assets = ['/resume.pdf'].map((path) => ({
-    url: `https://clark-brown.com${path}`,
-    lastModified: '2024-01-19',
+  const assets: Asset[] = [{ path: '/resume.pdf', dateModified: '2024-01-19' }]
+  const assetEntries = assets.map((asset) => ({
+    url: `${siteUrl}${asset.path}`,
+    lastModified: asset.dateModified,
   }))
 
-  return [...routes, ...assets]
+  return [...routeEntries, ...assetEntries]
 }

@@ -10,11 +10,24 @@ import { Footer } from '../components/footer'
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Clark Brown',
-  description: 'Software Engineer and Avid Whiteboarder',
+  title: {
+    default: 'Clark Brown',
+    template: '%s | Clark Brown',
+  },
+  description: 'Software engineer and avid whiteboarder',
+  openGraph: {
+    title: 'Clark Brown',
+    description: 'Software engineer and avid whiteboarder.',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://clark-brown.com',
+    siteName: 'Clark Brown',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    title: 'Clark Brown',
+    card: 'summary_large_image',
+  },
 }
-
-// TODO: add og:
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

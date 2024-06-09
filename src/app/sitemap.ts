@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // FIXME: dates here are always today
   const routes = ['', '/blog']
-  const routeEntries = ['', '/blog'].map((route) => ({
+  const routeEntries = routes.map((route) => ({
     url: `${siteUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
   }))

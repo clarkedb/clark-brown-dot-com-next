@@ -9,9 +9,17 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
   }, [error])
 
   return (
-    <div>
+    <div className="flex w-full flex-col gap-5">
       <p>Oh no, something went wrong... maybe refresh?</p>
-      <button onClick={reset}>reset</button>
+      <button
+        onClick={reset}
+        className='"rounded hover:bg-neutral-700" bg-neutral-800 px-4 py-2 font-bold text-neutral-300'
+      >
+        Refresh the page
+      </button>
+      <text className="mx-auto mt-40 text-8xl font-extrabold text-neutral-700 dark:text-neutral-300">
+        500
+      </text>
     </div>
   )
 }

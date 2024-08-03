@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export function Footer() {
   return (
     <footer className="mt-auto flex flex-row items-end px-2 py-4">

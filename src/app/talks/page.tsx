@@ -1,4 +1,3 @@
-import { Icon } from '@/components/icon'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
@@ -31,7 +30,7 @@ export default function Talks() {
 
       <section>
         <Link href="#2023">
-          <h2>2023</h2>
+          <h2 id="2023">2023</h2>
         </Link>
 
         <h3>Soggetto Cavato: 15th Century Data Encoding</h3>
@@ -66,9 +65,7 @@ export default function Talks() {
 
       <section>
         <Link href="#2022">
-          <h2 className="mb-4 text-2xl font-semibold" id="2022">
-            2022
-          </h2>
+          <h2 id="2022">2022</h2>
         </Link>
 
         <h3>The Halting Problem and Why We Can&apos;t Solve All Problems with Code</h3>
@@ -103,9 +100,7 @@ export default function Talks() {
 
       <section>
         <Link href="#2021">
-          <h2 className="mb-4 text-2xl font-semibold" id="2021">
-            2021
-          </h2>
+          <h2 id="2021">2021</h2>
         </Link>
 
         <h3>Testing Ruby Code Using Grift for Mocking Methods</h3>
@@ -152,9 +147,7 @@ export default function Talks() {
 
       <section>
         <Link href="#2020">
-          <h2 className="mb-4 text-2xl font-semibold" id="2020">
-            2020
-          </h2>
+          <h2 id="2020">2020</h2>
         </Link>
 
         <h3>How Eigenface Facial Recognition Works</h3>

@@ -7,15 +7,17 @@ export default function Home() {
     <section>
       <div>
         <h1 className="mb-8 text-2xl font-medium tracking-tighter">hello, I&apos;m Clark 👋</h1>
-        <p>I am a Problem Solver. I design and build solutions for hard problems.</p>
+        <p className="prose prose-neutral dark:prose-invert">
+          I am a Problem Solver. I design and build solutions for hard problems.
+        </p>
       </div>
       <div className="my-4 flex flex-col gap-2">
-        <p>
+        <p className="prose prose-neutral dark:prose-invert">
           Senior Software Engineer at Neighbor. Applied Math and Computer Science graduate.
           Experienced developer with various langages and technologies with a love of problem
           solving.
         </p>
-        <p>
+        <p className="prose prose-neutral dark:prose-invert">
           I am driven by team environments where we tackle challenging issues. I love creating and
           building, and I&apos;m a big a fan of whiteboards.
         </p>

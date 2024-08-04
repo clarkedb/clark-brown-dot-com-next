@@ -14,7 +14,6 @@ export async function generateMetadata({ params }: BlogPostProps): Promise<Metad
 
   const { title, publishedAt: publishedTime, summary: description, image } = post.metadata
 
-  // TODO: build og image stuff
   const ogImage = image ? `${siteURL}${image}` : `${siteURL}/og?title=${title}`
 
   return {

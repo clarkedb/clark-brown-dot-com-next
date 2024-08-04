@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     siteName: 'Clark Brown',
     locale: 'en_US',
     type: 'website',
+    images: '/og.png',
   },
   twitter: {
     title: 'Clark Brown',

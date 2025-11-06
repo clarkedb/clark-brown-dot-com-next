@@ -5,7 +5,8 @@ import { CustomMDX } from '@/components/mdx'
 import { getBlogPosts } from '@/db/blog'
 import { unstable_noStore as noStore } from 'next/cache'
 
-export async function generateMetadata({ params }: BlogPostProps): Promise<Metadata | undefined> {
+export async function generateMetadata(props: BlogPostProps): Promise<Metadata | undefined> {
+  const params = await props.params
   const siteURL = process.env.NEXT_PUBLIC_SITE_URL || 'https://clark-brown.com'
   const post = getBlogPosts().find((post) => post.slug === params.slug)
   if (!post) {
@@ -73,12 +74,13 @@ function formatDate(date: string) {
 }
 
 type BlogPostProps = {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export default function BlogPost({ params }: BlogPostProps) {
+export default async function BlogPost(props: BlogPostProps) {
+  const params = await props.params
   const siteURL = process.env.NEXT_PUBLIC_SITE_URL || 'https://clark-brown.com'
   const post = getBlogPosts().find((post) => post.slug === params.slug)
 

@@ -17,9 +17,9 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
       >
         Refresh the page
       </button>
-      <text className="mx-auto mt-40 text-8xl font-extrabold text-neutral-700 dark:text-neutral-300">
+      <div className="mx-auto mt-40 text-8xl font-extrabold text-neutral-700 dark:text-neutral-300">
         500
-      </text>
+      </div>
     </div>
   )
 }

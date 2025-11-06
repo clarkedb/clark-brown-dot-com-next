@@ -10,6 +10,7 @@ import { Footer } from '../components/footer'
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' })
 
 export const metadata: Metadata = {
+  metadataBase: process.env.NEXT_PUBLIC_SITE_URL || 'https://clark-brown.com',
   title: {
     default: 'Clark Brown',
     template: '%s | Clark Brown',

@@ -13,7 +13,7 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.13",
+    "@tailwindcss/typography": "^0.5.19",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "next": "16.0.7",

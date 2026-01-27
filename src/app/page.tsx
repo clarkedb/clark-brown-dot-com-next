@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       <div className="w-100 underline">
         <Link
-          href="/resume.pdf"
+          href="/resume"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-row items-center gap-1 transition-all hover:text-neutral-800 dark:hover:text-neutral-100"

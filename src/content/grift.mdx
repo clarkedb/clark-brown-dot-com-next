@@ -1,0 +1,27 @@
+---
+title: 'Introducing Grift'
+publishedAt: '2021-11-07'
+summary: 'Announcing the first major version of an open source project called Grift--a Ruby gem for mocking and spying in Ruby's MiniTest'
+---
+
+Yesterday, I released the first major version Grift! It's an open source Ruby gem for mocking and spying in Ruby's default MiniTest framework. (For you JS web developers, think Jest for Ruby.)
+
+I've learned so much in the process, and I'm amazed by the progress I made in just one month.
+
+Grift has 100% code coverage (line and branch) and is <a href="https://clarkedb.github.io/grift/" target="_blank">100% documented</a>.
+
+See it on GitHub <a href="https://github.com/clarkedb/grift" target="_blank">here</a>.
+
+### How does Grift work?
+
+Grift takes advantage of Ruby's meta-programming. In Ruby, your code can change method defintions or class references or constants on the fly. This is a little bit terrifying, but it allows Grift to work.
+
+When a method is mocked or with Grift, the true method is simply cached under an obfuscated method name and then overwritten. When it's time to clean up, the method is restored. It's just swapping defintions around.
+
+The idea is simple. Safely and consistently executing the idea with an intuitive API is the hard part, and I'm sure there is much more to do.
+
+### What's next?
+
+Grift is already in use at <a href="https://neighbor.com" target="_blank">Neighbor</a> providing a pool of developers to learn from. Grift is open source though, so anyone can use it in their project.
+
+Contributions are welcome!

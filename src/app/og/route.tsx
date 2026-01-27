@@ -10,38 +10,36 @@ export async function GET(req: NextRequest) {
   const backgroundImage = `url(${siteURL}/og-bg.png)`
 
   return new ImageResponse(
-    (
+    <div
+      style={{
+        height: '100%',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        backgroundImage: backgroundImage,
+      }}
+    >
       <div
         style={{
-          height: '100%',
-          width: '100%',
+          height: '50%',
+          marginTop: '5%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
           display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'flex-start',
-          backgroundImage: backgroundImage,
+          alignItems: 'center',
+          fontSize: 140,
+          fontFamily: 'sans',
+          letterSpacing: '-0.01em',
+          fontStyle: 'normal',
+          color: 'white',
+          whiteSpace: 'pre-wrap',
+          textAlign: 'center',
         }}
       >
-        <div
-          style={{
-            height: '50%',
-            marginTop: '5%',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            display: 'flex',
-            alignItems: 'center',
-            fontSize: 140,
-            fontFamily: 'sans',
-            letterSpacing: '-0.01em',
-            fontStyle: 'normal',
-            color: 'white',
-            whiteSpace: 'pre-wrap',
-            textAlign: 'center',
-          }}
-        >
-          {postTitle}
-        </div>
+        {postTitle}
       </div>
-    ),
+    </div>,
     {
       width: 1920,
       height: 1080,

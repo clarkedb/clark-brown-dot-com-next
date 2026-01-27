@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date().toISOString().split('T')[0],
   }))
 
-  const assets: Asset[] = [{ path: '/resume.pdf', dateModified: '2024-01-19' }]
+  const assets: Asset[] = [{ path: '/resume', dateModified: '2024-01-19' }]
   const assetEntries = assets.map((asset) => ({
     url: `${siteUrl}${asset.path}`,
     lastModified: asset.dateModified,

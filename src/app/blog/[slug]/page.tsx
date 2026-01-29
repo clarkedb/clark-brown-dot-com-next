@@ -92,7 +92,7 @@ export default async function BlogPost(props: BlogPostProps) {
   const views = 0
 
   return (
-    <section>
+    <main>
       <script
         type="application/ld+json"
         suppressHydrationWarning
@@ -133,6 +133,6 @@ export default async function BlogPost(props: BlogPostProps) {
       <article className="prose prose-neutral prose-quoteless dark:prose-invert">
         <CustomMDX source={post.content} />
       </article>
-    </section>
+    </main>
   )
 }

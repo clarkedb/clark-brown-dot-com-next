@@ -15,7 +15,7 @@ export default function BlogPage() {
   const views = 0
 
   return (
-    <section>
+    <main>
       <h1 className="mb-8 text-2xl font-medium tracking-tighter">read the blog</h1>
       {allBlogs
         .sort((a, b) => {
@@ -42,6 +42,6 @@ export default function BlogPage() {
             </div>
           </Link>
         ))}
-    </section>
+    </main>
   )
 }

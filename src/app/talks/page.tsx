@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Talks() {
   return (
-    <>
+    <main>
       <h1 className="text-2xl font-medium tracking-tighter">talks</h1>
       <section className="prose prose-neutral dark:prose-invert">
         <section>
@@ -228,6 +228,6 @@ export default function Talks() {
           </p>
         </section>
       </section>
-    </>
+    </main>
   )
 }

@@ -1,12 +1,12 @@
 ---
 title: 'Rebuilding my Portfolio Site with Next.js'
-publishedAt: '2026-01-29'
+publishedAt: '2026-01-29T14:30:00.000-07:00'
 summary: 'What I learned building my site with Next.js'
 ---
 
 After 2 years of mostly no progress, I've "completed" the next iteration of my portfolio site. This one is a rebuild using Next.js with TypeScript.
 
-### Before
+## Before
 
 I redo my portfolio from the ground up every so often to have fun and learn something new. Plus a refresh is always nice.
 
@@ -17,19 +17,19 @@ In order the iterations have been:
 1. A Gatsby site (<a href="https://clark-brown.firebaseapp.com/" rel="noopener noreferrer" target="_blank">demo</a> and <a href="https://github.com/clarkedb/clark-brown-dot-com-gatsby" rel="noopener noreferrer" target="_blank">source</a>)
 1. This site here! (<a href="#">demo</a> and <a href="https://github.com/clarkedb/clark-brown-dot-com-next" rel="noopener noreferrer" target="_blank">source</a>)
 
-### Dependency hell
+## Dependency hell
 
 I use GitHub's Dependabot to keep my dependencies up to date especially when their are security issues (which Next.js has had multiple critical <a href="https://nextjs.org/blog/CVE-2025-66478" rel="noopener noreferrer" target="_blank">CVEs</a> during development of this site). Because this took 2 years, Dependabot opened a lot of pull requests. I'm in awe at how the javascript world is built on dependencies on dependencies on dependencies. It's dependencies all the way down.
 
 The difficulty of upgrading to secure versions of dependencies with Gatsby was one of the original pushes for moving to a new framework. I fear that I've fallen into the same trap. This is one of the many reasons I almost abandoned this effort and went for Go or Rust for generating and building the site rather than a javascript framework. That's probably what I'll try for my next re-write.
 
-### Deployment
+## Deployment
 
-Deployments with Vercel are a breaze. It's very simple to connect to GitHub. It was easier than my old site which used Firebase.
+Deployments with Vercel are a breeze. It's very simple to connect to GitHub. It was easier than my old site which used Firebase.
 
 Vercel has definitely been successfuly in building Vercel and Next.js together in such a way that they are the clear hosting option for personal projects like this.
 
-### What's next?
+## What's next?
 
 I still have more to do for implenting blog article views with a real database. I'm planning to try using Vercel's hosted database option first, but I will abstract the backend so it is easy to swap data stores.
 

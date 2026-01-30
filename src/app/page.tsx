@@ -14,7 +14,7 @@ export default function Home() {
         <p className="prose prose-neutral dark:prose-invert">
           Senior Software Engineer with experience designing and operating high-impact systems in
           production. Applied Math and Computer Science graduate. Experienced developer with various
-          langages and technologies with a love of problem solving.
+          languages and technologies with a love of problem solving.
         </p>
         <p className="prose prose-neutral dark:prose-invert">
           I am driven by team environments where we tackle challenging issues. I love creating and

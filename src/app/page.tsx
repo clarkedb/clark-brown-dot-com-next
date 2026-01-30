@@ -1,10 +1,9 @@
 import { Icon } from '@/components/icon'
 import { Social } from '@/components/social'
-import Link from 'next/link'
 
 export default function Home() {
   return (
-    <section>
+    <main>
       <div>
         <h1 className="mb-8 text-2xl font-medium tracking-tighter">hello, I&apos;m Clark 👋</h1>
         <p className="prose prose-neutral dark:prose-invert">
@@ -23,15 +22,15 @@ export default function Home() {
         </p>
       </div>
       <div className="w-100 underline">
-        <Link
+        <a
           href="/resume"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
           className="flex flex-row items-center gap-1 transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
         >
           <Icon icon="download" height="1em" width="1em" />
           Download my resume
-        </Link>
+        </a>
       </div>
       <div className="mt-5 flex flex-row gap-3">
         <Social label="github" icon="github" url="https://github.com/clarkedb" />
@@ -43,6 +42,6 @@ export default function Home() {
         <Social label="x" icon="twitter" url="https://x.com/MetaphorComplex" />
         <Social label="email" icon="mail" url="mailto:clark@clark-brown.com" />
       </div>
-    </section>
+    </main>
   )
 }

@@ -13,6 +13,7 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/typography": "^0.5.19",
     "@vercel/analytics": "^1.6.1",
     "@vercel/speed-insights": "^1.2.0",
@@ -42,8 +43,8 @@
     "lint-staged": "^15.2.7",
     "postcss": "^8.5.6",
     "prettier": "^3.8.1",
-    "prettier-plugin-tailwindcss": "^0.6.14",
-    "tailwindcss": "^3.4.7",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   },
   "engines": {

@@ -6,6 +6,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Providers } from './providers'
 import { Navbar } from '../components/navbar'
 import { Footer } from '../components/footer'
+import { ServiceWorkerCleanup } from '@/components/cleanup'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' })
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.className}>
       <head />
       <body className="flex min-h-screen flex-col antialiased">
+        <ServiceWorkerCleanup />
         <div className="mx-4 flex max-w-2xl flex-col pb-2 pt-8 md:mx-auto md:w-full md:pb-8">
           <div className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:px-0">
             <Navbar />

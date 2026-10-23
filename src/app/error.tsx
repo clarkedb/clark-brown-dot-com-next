@@ -13,7 +13,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
       <p>Oh no, something went wrong... maybe refresh?</p>
       <button
         onClick={reset}
-        className='"rounded hover:bg-neutral-700" bg-neutral-800 px-4 py-2 font-bold text-neutral-300'
+        className="rounded-sm bg-neutral-800 px-4 py-2 font-bold text-neutral-300 hover:bg-neutral-700"
       >
         Refresh the page
       </button>

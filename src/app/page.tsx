@@ -21,7 +21,7 @@ export default function Home() {
           building, and I&apos;m a big a fan of whiteboards.
         </p>
       </div>
-      <div className="w-100 underline">
+      <div className="w-full underline">
         <a
           href="/resume"
           target="_blank"

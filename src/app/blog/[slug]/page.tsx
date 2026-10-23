@@ -118,7 +118,7 @@ export default async function BlogPost(props: BlogPostProps) {
       <h1 className="title max-w-[650px] text-2xl font-medium tracking-tighter">
         {post.metadata.title}
       </h1>
-      <div className="mb-8 mt-2 flex max-w-[650px] items-center justify-between text-sm">
+      <div className="mt-2 mb-8 flex max-w-[650px] items-center justify-between text-sm">
         <Suspense fallback={<p className="h-5" />}>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
             {formatDate(post.metadata.publishedAt)}
@@ -130,7 +130,7 @@ export default async function BlogPost(props: BlogPostProps) {
           </p>
         </Suspense>
       </div>
-      <article className="prose prose-neutral prose-quoteless dark:prose-invert">
+      <article className="prose prose-quoteless prose-neutral dark:prose-invert">
         <CustomMDX source={post.content} />
       </article>
     </main>

@@ -1,12 +1,25 @@
 version: 2
 
 updates:
+  - package-ecosystem: github-actions
+    directory: /
+    target-branch: main
+    open-pull-requests-limit: 6
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7
+    assignees:
+      - clarkedb
+
   - package-ecosystem: npm
     directory: /
     target-branch: main
     open-pull-requests-limit: 6
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 7
     assignees:
       - clarkedb
 
